@@ -21,8 +21,6 @@ def main():
   for line in sys.stdin:
     lines.append(line)
   input = ''.join(lines)
-  print(f'{input=}')
-  print(f'{args.max_tokens=}')
 
   response = openai.Completion.create(
     engine=args.engine,
