@@ -1,4 +1,6 @@
 {
-  "python.defaultInterpreterPath": "${workspaceFolder}/_ve"
+  "python.defaultInterpreterPath": "${workspaceFolder}/_ve",
+  "python.formatting.autopep8Args": [
+    "--indent-size=2",
+  ]
 }
-
