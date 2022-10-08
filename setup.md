@@ -2,6 +2,8 @@
 
 ## WSL2
 
+### Cuda
+
 https://docs.nvidia.com/cuda/wsl-user-guide/index.html#cuda-support-for-wsl2
 
 As of 2022-10-08, these were the steps (Installation of Linux x86 CUDA Toolkit using WSL-Ubuntu Package, version 11.8):
@@ -16,3 +18,14 @@ sudo apt-get update
 sudo apt-get -y install cuda
 ```
 
+### CuDNN
+
+https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
+
+```
+sudo dpkg -i /path/to/downloaded/cudnn-local-repo-ubuntu2004-8.6.0.163_1.0-1_
+amd64.deb
+sudo cp /var/cudnn-local-repo-*/cudnn-local-*-keyring.gpg /usr/share/keyrings/
+sudo apt-get update
+sudo apt-get install libcudnn8 libcudnn8-dev
+```
