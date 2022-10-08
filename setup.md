@@ -33,5 +33,5 @@ sudo apt-get install libcudnn8 libcudnn8-dev
 https://github.com/google/jax#pip-installation-gpu-cuda
 
 ```
-pip install --upgrade "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+_ve/bin/pip install --upgrade "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 ```
