@@ -1,8 +1,6 @@
 # setup notes
 
-## WSL2
-
-### Cuda
+## Cuda (WSL)
 
 https://docs.nvidia.com/cuda/wsl-user-guide/index.html#cuda-support-for-wsl2
 
@@ -18,7 +16,7 @@ sudo apt-get update
 sudo apt-get -y install cuda
 ```
 
-### CuDNN
+## CuDNN (Ubuntu 20.04)
 
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
 
@@ -28,4 +26,12 @@ amd64.deb
 sudo cp /var/cudnn-local-repo-*/cudnn-local-*-keyring.gpg /usr/share/keyrings/
 sudo apt-get update
 sudo apt-get install libcudnn8 libcudnn8-dev
+```
+
+## JAX
+
+https://github.com/google/jax#pip-installation-gpu-cuda
+
+```
+pip install --upgrade "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 ```
