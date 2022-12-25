@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 __DIR="$( cd "$( readlink -f $(dirname "${BASH_SOURCE[0]}" ))" && pwd )"
 ve_dir="${__DIR}/_ve"
 
