@@ -5,3 +5,4 @@ numpy
 ipython
 openai
 autopep8
+jupyter
