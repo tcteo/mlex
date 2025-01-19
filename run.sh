@@ -15,5 +15,11 @@ module="$(echo "${module}" | sed -e 's/\/$//g')"
 # replace slashes with dots
 module="$(echo "${module}" | sed -e 's/\//./g')"
 
+if [ -x "${ve_dir}/bin/python3" ]; then
+  python="${ve_dir}/bin/python3"
+else
+  python="python3" # whatever is already installed
+fi
+
 set -x
-"${ve_dir}/bin/python" -m "${module}" "$@"
+"${python}" -m "${module}" "$@"
